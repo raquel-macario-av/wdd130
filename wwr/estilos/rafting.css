@@ -44,12 +44,20 @@ article {
     padding: 8px;
 }
 
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 
 .hero {
     position: relative;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 20px;
 }
 
 .hero img {
@@ -70,6 +78,11 @@ h1 {
 }
 
 .hero article img {
-    float: center;
-    width: 800px;
+    float: right;
+    width: 150px;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: var(--cor-fundo);
 }
