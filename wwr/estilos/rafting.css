@@ -103,7 +103,7 @@ article {
     color: #333;
 }
 
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
     display: block;
     /* Essencial para centralizar a imagem dentro do link */
@@ -128,57 +128,40 @@ footer p {
     font-size: 14px;
 }
 
-/* Estilos da Lista de Navegação */
-footer nav ul.redes-sociais {
+footer nav.socialmedia ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    /* Remove as bolinhas da lista */
-
-    /* Alinha os itens da lista lado a lado */
     display: flex;
     gap: 15px;
-    /* Espaço entre os ícones */
 }
 
-footer nav ul.redes-sociais li {
+footer nav.socialmedia ul li {
     margin: 0;
 }
 
 /* Estilos dos Links (a) */
-footer nav ul.redes-sociais li a {
+footer nav.socialmedia ul li a {
     text-decoration: none;
     display: block;
-    /* Essencial para centralizar a imagem */
 }
 
 /* --- AS LOGOS --- */
-footer nav ul.redes-sociais li a img.logo-rodape {
-    /* Define o tamanho exato para ficar pequeno*/
+footer nav.socialmedia ul li a img.logo-rodape {
     width: 40px;
     height: 40px;
-
-    /* Garante que a imagem não seja distorcida e caiba no quadrado */
     object-fit: contain;
-
-    /* Estilos visuais*/
     display: block;
     border-radius: 50%;
-    /* Ícones redondos */
     background-color: white;
-    /* Fundo branco para logos transparentes */
     padding: 5px;
-    /* Espaço entre a logo e a borda */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    /* Sombra sutil */
     transition: transform 0.3s ease;
-    /* Efeito suave */
 }
 
 /* Efeito ao passar o mouse */
-footer nav ul.redes-sociais li a img.logo-rodape:hover {
+footer nav.socialmedia ul li a img.logo-rodape:hover {
     transform: scale(1.1);
-    /* Dá um pequeno zoom */
     opacity: 0.8;
 }
 
