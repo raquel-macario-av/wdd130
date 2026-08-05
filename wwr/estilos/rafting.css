@@ -7,8 +7,21 @@
 }
 
 header {
+
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    padding: 20px 80px;
     background-color: var(--cor-primaria);
     color: var(--cor-destaque);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 30px
 }
 
 * {
@@ -44,8 +57,167 @@ article {
     padding: 8px;
 }
 
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+}
+
+grade-imagens {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 colunas */
+    gap: 20px;
+    /* Espaçamento entre as imagens */
+}
+
+.grade-imagens figure {
+    margin: 0;
+    /* Remove margens padrão do figure */
+}
+
+.grade-imagens img {
+    width: 100%;
+    /* Faz a imagem ocupar toda a largura da sua coluna */
+    height: auto;
+    /* Mantém a proporção da foto */
+    border-radius: 8px;
+    /* Borda arredondada opcional */
+}
+
+.grade-imagens figcaption {
+    text-align: center;
+    /* Centraliza a legenda */
+    margin-top: 10px;
+    /* Espaço entre a imagem e a legenda */
+    font-size: 14px;
+}
+
+/* Define o contêiner que agrupa as 5 figuras */
+.grade-imagens {
+    display: grid;
+    /* Cria 5 colunas, cada uma ocupando 1 fração do espaço total */
+    grid-template-columns: repeat(5, 1fr);
+    /* Adiciona um espaço de 20px entre as imagens */
+    gap: 20px;
+    /* Limita a largura máxima da galeria para que ela não fique gigante em telas ultra-wide */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centraliza a galeria na página */
+
+    margin-top: 40px
+        /* Cria um espaço de 40px acima da galeria inteira */
+}
+
+/* Garante que a tag <figure> não tenha margens extras */
+.grade-imagens figure {
+    margin: 0;
+}
+
+/*Redimensiona a imagem */
+.grade-imagens figure img {
+    /* Faz a imagem preencher 100% da largura da sua coluna (1/5 do grid) */
+    width: 100%;
+    /* Mantém a proporção original da foto (não distorce) */
+    height: auto;
+    /* Adiciona cantos arredondados (opcional) */
+    border-radius: 8px;
+}
+
+/* Centraliza a legenda abaixo da imagem */
+.grade-imagens figure figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
 .socialmedia a {
     text-decoration: none;
+    display: block;
+    /* Essencial para centralizar a imagem dentro do link */
+
+}
+
+footer {
+    background-color: #1a0f0f;
+    /* Cor de fundo escura*/
+    color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 50px;
+
+    /* Alinha o texto e a navegação em duas colunas */
+    display: flex;
+    justify-content: space-between;
+    /* Texto à esq., navegação à dir. */
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    /* Espaçamento superior e centralização */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilos da Lista de Navegação */
+footer nav ul.redes-sociais {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* Remove as bolinhas da lista */
+
+    /* Alinha os itens da lista lado a lado */
+    display: flex;
+    gap: 15px;
+    /* Espaço entre os ícones */
+}
+
+footer nav ul.redes-sociais li {
+    margin: 0;
+}
+
+/* Estilos dos Links (a) */
+footer nav ul.redes-sociais li a {
+    text-decoration: none;
+    display: block;
+    /* Essencial para centralizar a imagem */
+}
+
+/* --- AS LOGOS --- */
+footer nav ul.redes-sociais li a img.logo-rodape {
+    /* Define o tamanho exato para ficar pequeno*/
+    width: 40px !important;
+    height: 40px !important;
+
+    /* Garante que a imagem não seja distorcida e caiba no quadrado */
+    object-fit: contain;
+
+    /* Estilos visuais*/
+    display: block;
+    border-radius: 50%;
+    /* Ícones redondos */
+    background-color: white;
+    /* Fundo branco para logos transparentes */
+    padding: 5px;
+    /* Espaço entre a logo e a borda */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+    transition: transform 0.3s ease;
+    /* Efeito suave */
+}
+
+/* Efeito ao passar o mouse */
+footer nav ul.redes-sociais li a img.logo-rodape:hover {
+    transform: scale(1.1);
+    /* Dá um pequeno zoom */
+    opacity: 0.8;
 }
 
 .hero {
