@@ -13,7 +13,7 @@ header {
     align-items: center;
     padding: 20px 80px;
     background-color: var(--cor-primaria);
-    color: var(--cor-destaque);
+    color: white;
 }
 
 nav ul {
@@ -21,7 +21,7 @@ nav ul {
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    gap: 30px
+    gap: 30px;
 }
 
 * {
@@ -45,7 +45,7 @@ footer {
 h1,
 h2 {
     font-family: Arial, sans-serif;
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     text-align: center;
 }
 
@@ -68,14 +68,6 @@ article {
     width: 100%;
 }
 
-grade-imagens {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* 5 colunas */
-    gap: 20px;
-    /* Espaçamento entre as imagens */
-}
-
 .grade-imagens figure {
     margin: 0;
     /* Remove margens padrão do figure */
@@ -90,14 +82,6 @@ grade-imagens {
     /* Borda arredondada opcional */
 }
 
-.grade-imagens figcaption {
-    text-align: center;
-    /* Centraliza a legenda */
-    margin-top: 10px;
-    /* Espaço entre a imagem e a legenda */
-    font-size: 14px;
-}
-
 /* Define o contêiner que agrupa as 5 figuras */
 .grade-imagens {
     display: grid;
@@ -107,26 +91,8 @@ grade-imagens {
     gap: 20px;
     /* Limita a largura máxima da galeria para que ela não fique gigante em telas ultra-wide */
     max-width: 1200px;
-    margin: 0 auto;
-    /* Centraliza a galeria na página */
-
-    margin-top: 40px
-        /* Cria um espaço de 40px acima da galeria inteira */
-}
-
-/* Garante que a tag <figure> não tenha margens extras */
-.grade-imagens figure {
-    margin: 0;
-}
-
-/*Redimensiona a imagem */
-.grade-imagens figure img {
-    /* Faz a imagem preencher 100% da largura da sua coluna (1/5 do grid) */
-    width: 100%;
-    /* Mantém a proporção original da foto (não distorce) */
-    height: auto;
-    /* Adiciona cantos arredondados (opcional) */
-    border-radius: 8px;
+    margin: 40px auto 0;
+    /* Cria um espaço de 40px acima da galeria inteira */
 }
 
 /* Centraliza a legenda abaixo da imagem */
@@ -137,7 +103,7 @@ grade-imagens {
     color: #333;
 }
 
-.socialmedia a {
+.redes-sociais a {
     text-decoration: none;
     display: block;
     /* Essencial para centralizar a imagem dentro do link */
@@ -145,13 +111,9 @@ grade-imagens {
 }
 
 footer {
-    background-color: #1a0f0f;
-    /* Cor de fundo escura*/
+    background-color: var(--cor-fundo);
     color: #ffffff;
     padding: 40px 20px;
-    margin-top: 50px;
-
-    /* Alinha o texto e a navegação em duas colunas */
     display: flex;
     justify-content: space-between;
     /* Texto à esq., navegação à dir. */
@@ -193,8 +155,8 @@ footer nav ul.redes-sociais li a {
 /* --- AS LOGOS --- */
 footer nav ul.redes-sociais li a img.logo-rodape {
     /* Define o tamanho exato para ficar pequeno*/
-    width: 40px !important;
-    height: 40px !important;
+    width: 40px;
+    height: 40px;
 
     /* Garante que a imagem não seja distorcida e caiba no quadrado */
     object-fit: contain;
@@ -224,37 +186,32 @@ footer nav ul.redes-sociais li a img.logo-rodape:hover {
     position: relative;
 }
 
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Garante que a imagem cubra a área sem distorcer */
+    display: block;
+
+}
+
+.hero h1 {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centralização perfeita */
+    color: #FFFFFF;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 .hero article {
     position: absolute;
-    bottom: 30px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, .8);
-    padding: 20px;
-}
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--cor-secundaria);
-    color: #FFFFFF;
-}
-
-.hero article img {
-    float: right;
-    width: 150px;
-    margin-left: 20px;
-}
-
-footer {
-    background-color: var(--cor-fundo);
 }
