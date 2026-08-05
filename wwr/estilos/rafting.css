@@ -1,7 +1,6 @@
 :root {
     --cor-primaria: #3299d4;
     --cor-secundaria: #073d4b;
-    --cor-destaque: #4a5863;
     --cor-texto: #333333;
     --cor-fundo: #140101;
 }
@@ -13,7 +12,7 @@ header {
     align-items: center;
     padding: 20px 80px;
     background-color: var(--cor-primaria);
-    color: white;
+    color: var(--cor-secundaria);
 }
 
 nav ul {
@@ -100,7 +99,7 @@ article {
     text-align: center;
     margin-top: 10px;
     font-size: 14px;
-    color: #333;
+    color: var(--cor-texto);
 }
 
 .socialmedia a {
@@ -112,7 +111,7 @@ article {
 
 footer {
     background-color: var(--cor-fundo);
-    color: #ffffff;
+    color: white;
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
