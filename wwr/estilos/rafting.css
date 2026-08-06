@@ -1,5 +1,6 @@
 :root {
-    --cor-primaria: #3299d4;
+    --cor-primaria: #0b6fa4;
+    ;
     --cor-secundaria: #073d4b;
     --cor-texto: #333333;
     --cor-fundo: #140101;
@@ -11,7 +12,7 @@ header {
     align-items: center;
     padding: 20px 80px;
     background-color: var(--cor-primaria);
-    color: #ffffff;
+    color: #000000;
 }
 
 nav ul {
@@ -23,7 +24,7 @@ nav ul {
 }
 
 header nav a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 }
 
