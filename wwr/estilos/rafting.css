@@ -12,7 +12,7 @@ header {
     align-items: center;
     padding: 20px 80px;
     background-color: var(--cor-primaria);
-    color: #000000;
+    color: #FFFFFF;
 }
 
 nav ul {
@@ -24,7 +24,7 @@ nav ul {
 }
 
 header nav a {
-    color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
