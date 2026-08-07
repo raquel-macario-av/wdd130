@@ -54,10 +54,8 @@ h2 {
 }
 
 nav,
-
-section,
-{
-margin: 16px 0;
+section {
+    margin: 16px 0;
 }
 
 .history-content {
@@ -78,11 +76,8 @@ margin: 16px 0;
 
 .grade-imagens img {
     width: 100%;
-    /* Faz a imagem ocupar toda a largura da sua coluna */
     height: auto;
-    /* Mantém a proporção da foto */
     border-radius: 8px;
-    /* Borda arredondada opcional */
 }
 
 /* Define o contêiner que agrupa as 5 figuras */
@@ -235,12 +230,6 @@ footer nav.socialmedia ul li a img.logo-rodape:hover {
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .informacoes-contato {
