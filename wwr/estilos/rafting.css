@@ -329,6 +329,337 @@ footer nav.redes-sociais ul li a img.logo-rodape:hover {
 }
 
 /* RESPONSIVO */
+:root {
+    --cor-primaria: #0b6fa4;
+    --cor-secundaria: #073d4b;
+    --cor-texto: #333333;
+    --cor-fundo: #140101;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--cor-texto);
+}
+
+header,
+main,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: Arial, sans-serif;
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+section {
+    margin: 16px 0;
+}
+
+header nav {
+    margin: 0;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+}
+
+.grade-imagens figure {
+    margin: 0;
+    /* Remove margens padrão do figure */
+}
+
+.grade-imagens img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Define o contêiner que agrupa as 5 figuras */
+.grade-imagens {
+    display: grid;
+    /* Cria 5 colunas, cada uma ocupando 1 fração do espaço total */
+    grid-template-columns: repeat(5, 1fr);
+    /* Adiciona um espaço de 20px entre as imagens */
+    gap: 20px;
+    /* Limita a largura máxima da galeria para que ela não fique gigante em telas ultra-wide */
+    max-width: 1200px;
+    margin: 40px auto 0;
+    /* Cria um espaço de 40px acima da galeria inteira */
+}
+
+/* Centraliza a legenda abaixo da imagem */
+.grade-imagens figure figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--cor-texto);
+}
+
+.socialmedia a {
+    text-decoration: none;
+    display: block;
+    /* Essencial para centralizar a imagem dentro do link */
+
+}
+
+footer {
+    background-color: var(--cor-fundo);
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    /* Texto à esq., navegação à dir. */
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    /* Espaçamento superior e centralização */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer nav.redes-sociais ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+footer nav.redes-sociais ul li {
+    margin: 0;
+}
+
+/* Estilos dos Links (a) */
+footer nav.redes-sociais ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+/* --- AS LOGOS --- */
+footer nav.redes-sociais ul li a img.logo-rodape {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+footer nav.redes-sociais ul li a img.logo-rodape:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Garante que a imagem cubra a área sem distorcer */
+    display: block;
+
+}
+
+.hero h1 {
+    position: absolute;
+    align-items: center;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centralização perfeita */
+    color: #FFFFFF;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero article {
+
+    position: absolute;
+    bottom: 40px;
+    /* Distância do fundo */
+    left: 5px;
+    /* Margem da esquerda */
+    right: 5px;
+    /* Margem da direita */
+    display: flex;
+    /* Ativa o modo Flexbox */
+    flex-direction: row-reverse;
+    /* Garante que fiquem lado a lado */
+    justify-content: space-between;
+    /* Empurra o texto para esquerda e imagem para direita */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+.hero article p {
+    flex: 1;
+    max-width: 70%;
+    color: #000000;
+    text-align: justify;
+
+    margin: 0;
+    line-height: 1.6;
+
+}
+
+.hero article img {
+
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.informacoes-contato {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.informacoes-contato h2 {
+    margin-bottom: 15px;
+}
+
+.informacoes-contato p {
+    margin: 5px 0;
+}
+
+.formulario-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    border-top: 2px dashed #999;
+    border-bottom: 2px dashed #999;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+/* MAPA */
+.mapa iframe {
+    width: 100%;
+    height: 420px;
+    border: 1px solid #999;
+    display: block;
+}
+
+/* FORMULÁRIO */
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.formulario textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* TÍTULO DOS RÁDIOS */
+.titulo-radio {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* CADA OPÇÃO */
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+/* BOTÃO */
+.formulario button {
+    background: #f2f2f2;
+    border: 1px solid #666;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #e0e0e0;
+}
+
+/* RESPONSIVO */
 @media (max-width: 768px) {
 
     /* Formulário de contato */
@@ -372,6 +703,211 @@ footer nav.redes-sociais ul li a img.logo-rodape:hover {
         justify-content: center;
         gap: 15px;
     }
+}
+
+.Equipe {
+    text-align: center;
+    margin: 40px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.Equipe h2 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.Equipe figure {
+    width: 180px;
+    margin: 0;
+    text-align: center;
+}
+
+.Equipe img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.Equipe figcaption {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.chamada-acao {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px 0;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+}
+
+.chamada-acao h2 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.chamada-acao p {
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.chamada-acao a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.chamada-acao a:hover {
+    opacity: 0.85;
+}
+
+.inicio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.inicio-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.inicio-grid div {
+    padding: 20px;
+}
+
+.inicio-grid h2 {
+    margin-bottom: 15px;
+}
+
+.inicio-grid p {
+    line-height: 1.6;
+}
+
+.newsletter {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px 30px;
+    align-items: center;
+    padding: 30px;
+    margin: 40px 0;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.newsletter h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 5px;
+}
+
+.newsletter p {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.newsletter form {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.passeios {
+    margin: 40px 0;
+}
+
+.passeios h2 {
+    margin-bottom: 30px;
+}
+
+.passeios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.passeio {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.passeio img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.passeio h3 {
+    margin: 20px 0 10px;
+    color: var(--cor-secundaria);
+}
+
+.passeio p {
+    line-height: 1.6;
+}
+
+.tabela-passeios {
+    margin: 50px 0;
+}
+
+.tabela-passeios h2 {
+    margin-bottom: 25px;
+}
+
+.tabela-passeios table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tabela-passeios th,
+.tabela-passeios td {
+    border: 1px solid #999;
+    padding: 12px;
+}
+
+.tabela-passeios th {
+    background-color: var(--cor-secundaria);
+    color: #FFFFFF;
+}
+
+.tabela-passeios tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 .Equipe {
