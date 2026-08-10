@@ -39,53 +39,63 @@
 
         </section>
         <section class="formulario-contato">
+
             <h2>Formulário de Contato</h2>
 
-            <div class="mapa"><iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125888.2572284011!2d-35.68667855!3d-9.59457475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70146fcd6688849%3A0xee2c725b43e07653!2zTWFjZWnDsywgQUw!5e0!3m2!1spt-BR!2sbr!4v1786055532753!5m2!1spt-BR!2sbr"
-                  allowfullscreen="" loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin">
+            <div class="contato-grid">
 
-                </iframe>
+                <div class="mapa">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125888.2572284011!2d-35.68667855!3d-9.59457475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70146fcd6688849%3A0xee2c725b43e07653!2zTWFjZWnDsywgQUw!5e0!3m2!1spt-BR!2sbr!4v1786055532753!5m2!1spt-BR!2sbr"
+                      allowfullscreen="" loading="lazy"
+                      referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
 
-            </div>
+                <div class="formulario">
+                    <form>
 
-            <div class="formulario">
-                <form>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
 
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
 
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email">
+                        <p class="titulo-radio">Propósito da Mensagem</p>
 
-                    <p class="titulo-radio">Propósito da Mensagem</p>
+                        <label class="radio-item">
+                            <input type="radio" name="proposito" value="duvida">
+                            <span>Dúvida Geral</span>
+                        </label>
 
-                    <input type="radio" id="duvida" name="proposito" value="duvida">
-                    <label for="duvida">Dúvida Geral</label>
+                        <label class="radio-item">
+                            <input type="radio" name="proposito" value="reserva">
+                            <span>Pergunta sobre Reserva</span>
+                        </label>
 
-                    <input type="radio" id="reserva" name="proposito" value="reserva">
-                    <label for="reserva">Pergunta sobre Reserva</label>
+                        <label class="radio-item">
+                            <input type="radio" name="proposito" value="sugestao">
+                            <span>Sugestão</span>
+                        </label>
 
-                    <input type="radio" id="sugestao" name="proposito" value="sugestao">
-                    <label for="sugestao">Sugestão</label>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem"></textarea>
 
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem"></textarea>
+                        <label class="campo-newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span>Por favor, me inscreva na newsletter mensal</span>
+                        </label>
 
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter" class="newsletter">
-                        Por favor, me inscreva na newsletter mensal
-                    </label>
+                        <button type="submit">Entrar em Contato!</button>
 
-                    <button type="submit">Entrar em Contato!</button>
+                    </form>
+                </div>
 
-                </form>
             </div>
 
         </section>
 
-        <section class="fucionarios">
+        <section class="Equipe">
             <h2>Estamos Aqui Para Servi-lo</h2>
 
             <figure>
