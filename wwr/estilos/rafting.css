@@ -332,32 +332,37 @@ footer nav.socialmedia ul li a img.logo-rodape:hover {
         grid-template-columns: 1fr;
     }
 
-    .inicio-grid {
+    header {
         grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     .passeios-grid {
         grid-template-columns: 1fr;
     }
 
-    .grade-imagens {
+    .inicio-grid {
         grid-template-columns: 1fr;
-    }
-
-    header {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
     }
 
     footer {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
         gap: 20px;
-        text-align: center;
+    }
+
+    footer nav.redes-sociais ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
     }
 }
 
