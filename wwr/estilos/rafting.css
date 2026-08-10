@@ -1,6 +1,5 @@
 :root {
     --cor-primaria: #0b6fa4;
-    ;
     --cor-secundaria: #073d4b;
     --cor-texto: #333333;
     --cor-fundo: #140101;
@@ -364,4 +363,110 @@ footer nav.socialmedia ul li a img.logo-rodape:hover {
 .Equipe figcaption {
     margin-top: 10px;
     font-size: 15px;
+}
+
+.chamada-acao {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px 0;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+}
+
+.chamada-acao h2 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.chamada-acao p {
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.chamada-acao a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.chamada-acao a:hover {
+    opacity: 0.85;
+}
+
+.inicio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.inicio-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.inicio-grid div {
+    padding: 20px;
+}
+
+.inicio-grid h2 {
+    margin-bottom: 15px;
+}
+
+.inicio-grid p {
+    line-height: 1.6;
+}
+
+.newsletter {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px 30px;
+    align-items: center;
+    padding: 30px;
+    margin: 40px 0;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.newsletter h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 5px;
+}
+
+.newsletter p {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.newsletter form {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
 }
