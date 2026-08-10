@@ -52,9 +52,12 @@ h2 {
     text-align: center;
 }
 
-nav,
 section {
     margin: 16px 0;
+}
+
+header nav {
+    margin: 0;
 }
 
 .history-content {
@@ -125,7 +128,7 @@ footer p {
     font-size: 14px;
 }
 
-footer nav.socialmedia ul {
+footer nav.redes-sociais ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -133,18 +136,18 @@ footer nav.socialmedia ul {
     gap: 15px;
 }
 
-footer nav.socialmedia ul li {
+footer nav.redes-sociais ul li {
     margin: 0;
 }
 
 /* Estilos dos Links (a) */
-footer nav.socialmedia ul li a {
+footer nav.redes-sociais ul li a {
     text-decoration: none;
     display: block;
 }
 
 /* --- AS LOGOS --- */
-footer nav.socialmedia ul li a img.logo-rodape {
+footer nav.redes-sociais ul li a img.logo-rodape {
     width: 40px;
     height: 40px;
     object-fit: contain;
@@ -157,7 +160,7 @@ footer nav.socialmedia ul li a img.logo-rodape {
 }
 
 /* Efeito ao passar o mouse */
-footer nav.socialmedia ul li a img.logo-rodape:hover {
+footer nav.redes-sociais ul li a img.logo-rodape:hover {
     transform: scale(1.1);
     opacity: 0.8;
 }
@@ -328,10 +331,12 @@ footer nav.socialmedia ul li a img.logo-rodape:hover {
 /* RESPONSIVO */
 @media (max-width: 768px) {
 
+    /* Formulário de contato */
     .formulario-contato {
         grid-template-columns: 1fr;
     }
 
+    /* Cabeçalho e menu */
     header {
         grid-template-columns: 1fr;
         padding: 20px;
@@ -343,22 +348,25 @@ footer nav.socialmedia ul li a img.logo-rodape:hover {
         gap: 10px;
     }
 
+    /* Passeios */
     .passeios-grid {
         grid-template-columns: 1fr;
     }
 
+    /* Página inicial */
     .inicio-grid {
         grid-template-columns: 1fr;
     }
 
+    /* Rodapé */
     footer {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        text-align: left;
+        text-align: center;
         gap: 20px;
     }
 
+    /* Ícones das redes sociais */
     footer nav.redes-sociais ul {
         flex-direction: row;
         justify-content: center;
