@@ -327,8 +327,37 @@ footer nav.socialmedia ul li a img.logo-rodape:hover {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
+
     .formulario-contato {
         grid-template-columns: 1fr;
+    }
+
+    .inicio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .passeios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grade-imagens {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 }
 
